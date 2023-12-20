@@ -9,17 +9,18 @@ package paquete05;
  * @author LAB.ELECT
  */
 public class Ejemplo002 {
+
     public static void main(String[] args) {
-        int[][] arreglo1 = {{10,41,40},{1,2,3},{1,12,4}};
+        int[][] arreglo1 = {{10, 41, 40}, {1, 2, 3}, {1, 12, 4}};
         int suma = 0;
         for (int f = 0; f < arreglo1.length; f++) {
             for (int c = 0; c < arreglo1[f].length; c++) {
-                if(f == c){
+                if (f == c) {
                     suma = suma + arreglo1[f][c];
                 }
             }
         }
-        System.out.printf("La suma de los valores es: %d\n",suma);
+        System.out.printf("La suma de los valores es: %d\n", suma);
     }
 }
 /*
