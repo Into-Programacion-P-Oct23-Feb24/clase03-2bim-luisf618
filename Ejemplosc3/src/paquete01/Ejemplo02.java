@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package paquete01;
-
+import java.util.Scanner;
+import java.util.Locale;
 /**
  *
  * @author reroes
@@ -15,6 +16,8 @@ public class Ejemplo02 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
         // Creación de arreglo bidimensionales
         
         // forma 1
@@ -24,8 +27,12 @@ public class Ejemplo02 {
         System.out.printf("Valor en la posición [0][2]\n", arreglo1[0][2]);
        
         arreglo1[0][2] = 1000;
-        
-               
+        for (int fila = 0; fila < arreglo1.length; fila++) {
+            for (int col = 0; col < arreglo1[fila].length; col++) {
+                System.out.println("Ingrese el valor");
+                arreglo1[fila][col] = entrada.nextInt();
+            }
+        }
         for (int fila = 0; fila < arreglo1.length; fila++) {
             for (int col = 0; col < arreglo1[fila].length; col++) {
                 System.out.printf("fila[%d] columna[%d] = %d\n", 
