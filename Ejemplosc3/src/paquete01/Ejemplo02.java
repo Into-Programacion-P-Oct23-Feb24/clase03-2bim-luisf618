@@ -23,9 +23,11 @@ public class Ejemplo02 {
         // forma 1
         int valor;
         int[][] arreglo1 = new int[3][4]; //
-        System.out.printf("Uso de la opción length: %d\n", arreglo1.length);
+        System.out.printf("Uso de la opción length: %d\n", 
+                arreglo1.length);
         
-        System.out.printf("Valor en la posición [0][2]\n", arreglo1[0][2]);
+        System.out.printf("Valor en la posición [0][2]\n", 
+                arreglo1[0][2]);
        
         arreglo1[0][2] = 1000;
         for (int fila = 0; fila < arreglo1.length; fila++) {
